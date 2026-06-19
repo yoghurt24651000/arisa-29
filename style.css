@@ -4,26 +4,22 @@ body {
     margin: 0;
     padding: 0;
 
-    /* พื้นหลังสีรุ้ง */
+    /* พื้นหลังสีชมพู-ส้ม */
     background: linear-gradient(
         -45deg,
-        red,
-        orange,
-        yellow,
-        green,
-        cyan,
-        blue,
-        indigo,
-        violet
+        #ff6b6b, /* ชมพูเข้ม */
+        #ff8e53, /* ส้มพีช */
+        #ffb199, /* ชมพูอ่อน */
+        #ffccd5  /* ชมพูนม */
     );
     background-size: 400% 400%;
-    animation: rainbowBG 10s ease infinite;
+    animation: gradientBG 10s ease infinite;
 
     color: #333;
 }
 
-/* พื้นหลังสีรุ้งเคลื่อนไหว */
-@keyframes rainbowBG {
+/* พื้นหลังเคลื่อนไหว */
+@keyframes gradientBG {
     0% {
         background-position: 0% 50%;
     }
@@ -35,48 +31,42 @@ body {
     }
 }
 
-/* Header สีรุ้ง */
+/* Header สีชมพู-ส้ม */
 header {
     background: linear-gradient(
         90deg,
-        red,
-        orange,
-        yellow,
-        green,
-        cyan,
-        blue,
-        violet
+        #ff6b6b,
+        #ff8e53,
+        #ffb199,
+        #ff8e53
     );
     background-size: 400% 400%;
-    animation: rainbowBG 5s linear infinite;
+    animation: gradientBG 5s linear infinite;
 
     color: white;
     padding: 20px 0;
     text-align: center;
 }
 
-/* ตัวอักษรสีรุ้ง */
+/* ตัวอักษรไล่เฉดสีชมพู-ส้ม */
 header h1 {
     font-size: 3rem;
     background: linear-gradient(
         90deg,
-        red,
-        orange,
-        yellow,
-        green,
-        cyan,
-        blue,
-        violet
+        #ff4757,
+        #ff6b81,
+        #ffa502,
+        #ff4757
     );
     background-size: 400%;
-    animation: rainbowText 3s linear infinite;
+    animation: gradientText 3s linear infinite;
 
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
-/* ตัวหนังสือสีรุ้ง */
-@keyframes rainbowText {
+/* ตัวหนังสือเคลื่อนไหว */
+@keyframes gradientText {
     0% {
         background-position: 0%;
     }
@@ -115,43 +105,38 @@ section:hover {
     transform: scale(1.05) rotate(1deg);
 }
 
-/* หัวข้อสีรุ้ง */
+/* หัวข้อสีชมพู-ส้ม */
 h2,
 h3 {
     background: linear-gradient(
         90deg,
-        red,
-        orange,
-        yellow,
-        green,
-        cyan,
-        blue,
-        violet
+        #ff4757,
+        #ff6b81,
+        #ffa502,
+        #ff4757
     );
     background-size: 400%;
-    animation: rainbowText 3s linear infinite;
+    animation: gradientText 3s linear infinite;
 
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
-/* Footer สีรุ้ง */
+/* Footer สีชมพู-ส้ม */
 footer {
     text-align: center;
     padding: 15px;
 
     background: linear-gradient(
         90deg,
-        red,
-        orange,
-        yellow,
-        green,
-        cyan,
-        blue,
-        violet
+        #ff6b6b,
+        #ff8e53,
+        #ffb199,
+        #ff8e53
     );
     background-size: 400% 400%;
-    animation: rainbowBG 5s linear infinite;
+    animation: gradientBG 5s linear infinite;
 
     color: white;
 }
+   
